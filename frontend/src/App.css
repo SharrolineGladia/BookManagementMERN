@@ -1,0 +1,115 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #4a4e69;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Add & Update button styles */
+button:nth-of-type(1) {
+  background-color: #38b000;
+}
+button:nth-of-type(1):hover {
+  background-color: #2a7a00;
+}
+
+/* Edit button */
+button:nth-of-type(2) {
+  background-color: #ffa500;
+}
+button:nth-of-type(2):hover {
+  background-color: #cc8400;
+}
+
+/* Delete button */
+button:nth-of-type(3) {
+  background-color: #e63946;
+}
+button:nth-of-type(3):hover {
+  background-color: #a62832;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f0f0f0;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Book text styling */
+li span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Button container for each book item */
+li div {
+  display: flex;
+  gap: 5px;
+}
+
+.error {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fade-in 0.5s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
