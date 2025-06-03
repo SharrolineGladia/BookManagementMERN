@@ -36,13 +36,13 @@ cd BookManagementMERN
 ---
 
 ## Install backend dependencies
-- cd server
+- cd backend
 - npm install
 
 ## Start backend server 
 - npm run dev
 
 ## Install frontend dependencies
-- cd ../client
+- cd ../frontend
 - npm install
 - npm start
